@@ -15,12 +15,27 @@
    <meta name="viewport" content="width=device-width,
    initial-scale=1, shrink-to-fit=no">
 
+   <!-- jquery style sheet -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
    <!-- stylesheet -->
    <link rel="sylesheet"
    href="css/stylesheet.css" type="text/css">
 
    <!-- icon -->
    <link rel="shortcut icon" href="" type="image/x-icon">
+
+   <!-- scripts -->
+   <script>
+   $(document).ready(function(){
+       alert('hekldjfs');
+   });
+
+   $("#getTracks").click(function() {
+     var spot = $.get https://api.spotify.com/v1/me/top/{tracks}
+     alert(spot);
+   });
+   </script>
 </head>
 
 <body>
@@ -40,6 +55,10 @@
         <p class="font-italic text-center" >Harshly</p>
       </p>
   </div>
+
+  <button type="button" class="btn btn-primary" id="getTracks">Tracks</button>
+
+
 
 
 </body>
